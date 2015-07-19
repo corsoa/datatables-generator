@@ -1,0 +1,38 @@
+{
+  "name": "datatables-generator",
+  "version": "0.0.1",
+  "authors": [
+    "Aaron Corso <aaron@corsoa.com>"
+  ],
+  "dependencies": {
+	  "jquery": ">=2.1.4",
+	  "bootstrap": ">=3.3.4",
+	  "codemirror": ">=5.2.0",
+	  "datatables": ">=1.10.7"
+  },
+  "description": "Easy generator for jQuery datatables",
+  "main": ["public/assets/js/datables-generator.min.js", "public/assets/css/style.min.css"],
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "datatables"
+  ],
+  "homepage": "http://corsoa.com/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true,
+  "overrides": {
+	    "codemirror": {
+	      "main": ["lib/codemirror.js", "lib/codemirror.css", "mode/javascript/javascript.js"]
+	    },
+      "bootstrap": {
+        "main": ["dist/js/bootstrap.min.js", "dist/css/bootstrap.min.css"]
+      }
+  }
+}

@@ -1,0 +1,19 @@
+<h2>Example 1 - Rendered HTML, Unused Data in WebService</h2>
+
+<table id="example">
+    <tbody>
+    </tbody>
+</table>
+<div class="codewrap">
+    <textarea class="code" id="code_js_1">
+        $(document).ready(function() {
+            var columnOrdering = [ 'Image', 'Username', 'Message', 'Date' ];
+            var URL = constructURL('http://localhost:3000/ajax', columnOrdering, 100, true, true);
+            generateDataTable('example', URL, columnOrdering);
+        });
+    </textarea>
+</div>
+
+<script type="text/javascript">
+    eval($('#code_js_1').val());
+</script>

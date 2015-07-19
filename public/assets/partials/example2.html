@@ -1,0 +1,28 @@
+<h2>Example 2 - Column Options for Word Wrap and Explicit Widths</h2>
+<span><em>Allows for backwards compatibility</em></span>
+
+<table id="example2">
+    <tbody>
+    </tbody>
+</table>
+
+<div class="codewrap">
+    <textarea class="code" id="code_js_2">
+        $(document).ready(function() {
+            var columnOptions = [
+                'Book Name',
+                'Username',
+                {'Message': {width: '40%', className: 'wordwrap'}},
+                'Date'
+            ];
+    
+            var URL = constructURL('http://localhost:3000/ajax', columnOptions, 100, false, false, true);
+            generateDataTable('example2', URL, columnOptions);
+        
+        });
+    </textarea>
+</div>
+
+<script type="text/javascript">
+    eval($('#code_js_2').val());
+</script>

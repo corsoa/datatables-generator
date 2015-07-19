@@ -1,0 +1,35 @@
+{
+  "name": "datatables-generator",
+  "version": "0.0.1",
+  "description": "FE Generator utility for dataTables for stress testing. Simple Express server to generate random data to be rendered.",
+  "author": "Aaron Corso <aaron@corsoa.com>",
+  "scripts": {
+    "start": "node app.js",
+    "postinstall" : "node_modules/.bin/bower install"
+  },
+  "main": "app.js",
+  "dependencies": {
+    "express": ">=4.12.4",
+    "gm": ">=1.18.1"
+  },
+  "devDependencies": {
+    "grunt": ">=0.4.5",
+    "bower": ">=1.4.1",
+    "grunt-wiredep": ">=2.0.0",
+    "grunt-jsbeautifier": ">=0.2.10",
+    "grunt-contrib-jshint": ">=0.11.2",
+    "jshint-stylish": ">=2.0.0",
+    "grunt-contrib-less": ">=1.0.1",
+    "grunt-contrib-uglify": ">=0.9.1",
+    "grunt-contrib-watch": ">=0.6.1",
+    "grunt-jsdoc": ">=0.6.7",
+    "karma": ">=0.12.36",
+    "grunt-karma": ">=0.11.0",
+    "karma-jasmine": ">=0.3.5",
+    "karma-chrome-launcher": ">=0.1.12",
+    "karma-phantomjs-launcher": ">=0.2.0",
+    "karma-jasmine-jquery": ">=0.1.1"
+  },
+  "preferGlobal": true,
+  "private": true
+}
