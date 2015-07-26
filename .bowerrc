@@ -1,6 +1,3 @@
 {
-  "scripts": {
-    "postinstall": "grunt"
-  },
   "directory": "public/bower_components"
 }

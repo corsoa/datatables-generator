@@ -2,6 +2,7 @@ module.exports = function(grunt) {
     var jsLocation = 'public/assets/js',
         cssLocation = 'public/assets/css';
     grunt.initConfig({
+		pkg: grunt.file.readJSON('package.json'),
         wiredep: {
             target: {
                 src: 'public/index.html'
@@ -84,5 +85,5 @@ module.exports = function(grunt) {
     //verify tests quickly
     grunt.registerTask('test', ['karma:unit']);
     //production builds.
-    grunt.registerTask('default', ['wiredep', 'jsbeautifier', 'jsdoc', 'less', 'uglify']);
+    grunt.registerTask('default', ['wiredep', 'jsdoc', 'less', 'uglify']);
 };

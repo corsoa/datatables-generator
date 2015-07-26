@@ -14,6 +14,5 @@ To view the examples:
 
 ```
 npm install
-grunt
-node app
+npm start
 ```
