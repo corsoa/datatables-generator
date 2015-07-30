@@ -8,7 +8,7 @@
     <textarea class="code" id="code_js_1">
         $(document).ready(function() {
             var columnOrdering = [ 'Image', 'Username', 'Message', 'Date' ];
-            var URL = constructURL('http://localhost:3000/ajax', columnOrdering, 100, true, true);
+            var URL = constructURL('ajax', columnOrdering, 100, true, true);
             generateDataTable('example', URL, columnOrdering);
         });
     </textarea>
